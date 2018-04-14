@@ -1,3 +1,6 @@
 from debugger import debugger
 
-debugger().load(b'C:\\WINDOWS\\system32\\calc.exe')
+debugger = debugger()
+pid = int(input('Enter the PID to attach to: '))
+debugger.attach(pid)
+debugger.detach()
